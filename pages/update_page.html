@@ -26,6 +26,9 @@
             color: white;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         }
+        .timer{
+            width: 26%;
+        }
     </style>
 </head>
 <body class="bg-secondary-subtle">
@@ -92,6 +95,14 @@
               <p class="card-text text-body-secondary h5 m-3">Product will be available on 
                 <b>18<sup>th</sup> April 2024</b>
               </p>
+
+              <div class="timer card-text p-2 h2 m-3 border-2 rounded-3 border border-black shadow-lg bg-body-tertiary rounded" id="clock">
+              </div>
+
+              <div id="date-difference" class="card-text p-2 h2 m-3">
+
+              </div>
+
             </div>
           </div>
         </div>
@@ -110,7 +121,7 @@
               </br>They make soil loose and pulverized to help in cultivation. 
                 Cultivators are self-propelled and are easy to use.</p></div>
             
-              <p class="card-text text-body-secondary h5 m-3">Product will be available on 
+              <p class="card-text text-body-secondary h5 m-3">Service will be available on 
                 <b>20<sup>th</sup> April 2024</b>
               </p>
             </div>
@@ -142,7 +153,7 @@
         <div class="card-body">
           <h5 class="card-title">Enter your email to get new updates</h5>
           <div class="col-sm-6 shadow-lg p-3 mb-5 bg-body-tertiary rounded mx-auto">
-            <input type="email" placeholder="Enter Email" class="form-control" id="inputPassword">
+            <input type="email" placeholder="Enter Email" class="border-success form-control" id="inputPassword">
           </div>
           <button type="submit" class="button  d-block mx-auto m-5 fs-4 bg-success" onclick="submitMsg()">Submit</button>
         </div>
@@ -241,6 +252,26 @@
         {
             alert("Thanks! Now you can get new updates regularly...")
         }
+
+        function timer(){
+            const date= new Date();
+            const time= date.toLocaleTimeString();
+            document.getElementById('clock').innerText= time;
+        }
+        setInterval(timer, 1000);
+        timer();
+
+        function dateDiff()
+        {
+            const currDate= new Date();
+            const currentDate= currDate.toLocaleDateString();
+            const publishDate= 18;
+            const dateDifference= parseInt(publishDate) - parseInt(getDate(currentDate));
+            const result= document.getElementById('date-difference');
+            result.innerText= (`Only ${dateDifference} days are remaining!`) ;
+            
+        }
+        dateDiff();
     </script>
 
 </body>
