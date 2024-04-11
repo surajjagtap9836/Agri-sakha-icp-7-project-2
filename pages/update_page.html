@@ -93,13 +93,13 @@
               <p class="card-text h5">We are going to launch variety of best quality <b>Seeds</b>. </p></div>
             
               <p class="card-text text-body-secondary h5 m-3">Product will be available on 
-                <b>18<sup>th</sup> April 2024</b>
+                <b> <span id="publish-date">18</span><sup>th</sup> April 2024</b>
               </p>
 
               <div class="timer card-text p-2 h2 m-3 border-2 rounded-3 border border-black shadow-lg bg-body-tertiary rounded" id="clock">
               </div>
 
-              <div id="date-difference" class="card-text p-2 h2 m-3">
+              <div id="date-difference" class="card-text p-2 h4 m-3">
 
               </div>
 
@@ -263,12 +263,12 @@
 
         function dateDiff()
         {
-            const currDate= new Date();
-            const currentDate= currDate.toLocaleDateString();
-            const publishDate= 18;
-            const dateDifference= parseInt(publishDate) - parseInt(getDate(currentDate));
+            const currentDate= new Date();
+            const publishDate= document.getElementById('publish-date').innerText;
+            // const publishDate= parseInt(18);
+            const dateDifference= parseInt(publishDate) - currentDate.getDate();
             const result= document.getElementById('date-difference');
-            result.innerText= (`Only ${dateDifference} days are remaining!`) ;
+            result.innerText= `Only ${dateDifference} days are remaining!` ;
             
         }
         dateDiff();
