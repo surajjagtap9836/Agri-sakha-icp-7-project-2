@@ -4,7 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>Updates</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100&display=swap');
+
+        nav{
+            margin-bottom: 20px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        .container-1 {
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        
+        .img{
+            height: 380px;
+        }
+        .img1{
+            height: 400px;
+            width: 503px;
+        }
+        .button{
+            font-weight: 500;
+            font-family: "poppins" , "sans-serif";
+            border: none;
+            border-radius: 5px;
+            padding: 10px 50px;
+            font-size: 20px;
+            cursor: pointer;
+            color: white;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        .timer{
+            width: 28%;
+        }
+    </style>
 </head>
 <body class="bg-secondary-subtle">
 
@@ -56,8 +91,8 @@
    
 
     
-    <h1 class="text-center mt-4 heading" style="color: #8bc052">Coming Soon</h1>
-    <div class="card mb-3 mx-auto mt-5" style="max-width: 1200px;">
+    <h1 class="text-center mt-4 heading text-success">Coming Soon</h1>
+    <div class="container-1 card mb-3 mx-auto mt-5" style="max-width: 1200px;">
         <div class="row g-0">
           <div class="col-md-5">
             <img src="../Images/index Img/update_product.png" class="img-fluid rounded-start" alt="Launching-product">
@@ -68,19 +103,85 @@
               <p class="card-text h5">We are going to launch variety of best quality <b>Seeds</b>. </p></div>
             
               <p class="card-text text-body-secondary h5 m-3">Product will be available on 
-                <b>18<sup>th</sup> April 2024</b>
+                <b> <span id="publish-date">18</span><sup>th</sup> April 2024</b>
               </p>
+
+              <div class="timer card-text p-2 h2 m-3 border-2 rounded-3 border border-black shadow-lg bg-body-tertiary rounded" id="clock">
+              </div>
+
+              <div id="date-difference" class="card-text p-2 h4 m-3">
+
+              </div>
+
             </div>
           </div>
         </div>
       </div>
 
-      <div class="card text-center mx-auto" style="max-width: 1200px;">
+      <div class="container-1 card mb-3 mx-auto mt-5" style="max-width: 1200px;">
+        <div class="row g-0">
+          <div class="col-md-5">
+            <img src="../Images/index Img/update_product2.png" class="img1 img-fluid rounded-start" alt="Cultivator" height="527px">
+          </div>
+          <div class="col-md-7">
+            <div class="card-body">
+              <h5 class="card-title h2 mt-3 mb-4" style="color: #8bc052">Cultivator Machines</h5>
+              <p class="card-text h5">We understood the need of Cultivator in agriculture.
+                So we are going to launch <b>Cultivator Machines System</b>. 
+              </br>They make soil loose and pulverized to help in cultivation. 
+                Cultivators are self-propelled and are easy to use.</p></div>
+            
+              <p class="card-text text-body-secondary h5 m-3">Service will be available on 
+                <b><span id="publish-date-prod1">16</span><sup>th</sup> April 2024</b>
+              </p>
+
+              <div class="timer card-text p-2 h2 m-3 border-2 rounded-3 border border-black shadow-lg bg-body-tertiary rounded" id="clock1">
+            </div>
+
+            <div id="date-difference-prod1" class="card-text p-2 h4 m-3">
+
+            </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-1 card mb-3 mx-auto mt-5" style="max-width: 1200px;">
+        <div class="row g-0">
+          <div class="col-md-5">
+            <img src="../Images/index Img/update_product4.png" class="img img-fluid rounded-start" alt="Launching-product">
+          </div>
+          <div class="col-md-7">
+            <div class="card-body">
+              <h5 class="card-title h2 mt-3 mb-4" style="color: #8bc052">Mahadhan 13:40:13 Fertilizer </h5>
+              <p class="card-text h5">We are going to launch best quality <b>Mahadhan 13:40:13 Fertilizer</b>. Mahadhan 13:40:13 Fertilizer
+                 is a 100% water-soluble fertilizer that contains nitrogen (N), phosphorus (P), and potassium (K)</p></div>
+            
+              <p class="card-text text-body-secondary h5 m-3">Product will be available on 
+                <b><span id="publish-date-prod2">14</span><sup>rd</sup> April 2024</b>
+              </p>
+
+              <div class="timer card-text p-2 h2 m-3 border-2 rounded-3 border border-black shadow-lg bg-body-tertiary rounded" id="clock2">
+            </div>
+
+            <div id="date-difference-prod2" class="card-text p-2 h4 m-3">
+
+            </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container-1 card text-center mx-auto" style="max-width: 1200px;">
         <div class="card-body">
           <h5 class="card-title">Enter your email to get new updates</h5>
           <div class="col-sm-6 shadow-lg p-3 mb-5 bg-body-tertiary rounded mx-auto">
-            <input type="email" placeholder="Enter Email" class="form-control" id="inputPassword">
+            <input type="email" placeholder="Enter Email" class="border-success form-control" id="inputPassword">
           </div>
+          <button type="submit" class="button  d-block mx-auto m-5 fs-4 bg-success" onclick="submitMsg()">Submit</button>
         </div>
       </div>
 
@@ -171,6 +272,74 @@
       </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script>
+        function submitMsg()
+        {
+            alert("Thanks! Now you can get new updates regularly...")
+        }
+
+        function timer(){
+            const date= new Date();
+            const time= date.toLocaleTimeString();
+            document.getElementById('clock').innerText= time;
+        }
+        setInterval(timer, 1000);
+        timer();
+
+        function timerProd1(){
+            const date= new Date();
+            const time= date.toLocaleTimeString();
+            document.getElementById('clock1').innerText= time;
+        }
+        setInterval(timerProd1, 1000);
+        timerProd1();
+
+        function timerProd2(){
+            const date= new Date();
+            const time= date.toLocaleTimeString();
+            document.getElementById('clock2').innerText= time;
+        }
+        setInterval(timerProd2, 1000);
+        timerProd2();
+
+        function dateDiff()
+        {
+            const currentDate= new Date();
+            const publishDate= document.getElementById('publish-date').innerText;
+            const dateDifference= parseInt(publishDate) - currentDate.getDate();
+            const result= document.getElementById('date-difference');
+            const day= (dateDifference > 1) ? `days are` : `day is`; 
+            result.innerText= `Only ${dateDifference} ${day} remaining!` ;
+            
+        }
+        dateDiff();
+
+        function dateDiffProd1()
+        {
+            const currentDate= new Date();
+            const publishDate= document.getElementById('publish-date-prod1').innerText;
+            const dateDifference= parseInt(publishDate) - currentDate.getDate();
+            const result= document.getElementById('date-difference-prod1');
+            const day= (dateDifference > 1) ? `days are` : `day is`; 
+            result.innerText= `Only ${dateDifference} ${day} remaining!` ;
+            
+        }
+        dateDiffProd1();
+
+        function dateDiffProd2()
+        {
+            const currentDate= new Date();
+            const publishDate= document.getElementById('publish-date-prod2').innerText;
+            const dateDifference= parseInt(publishDate) - currentDate.getDate();
+            const result= document.getElementById('date-difference-prod2');
+            const day= (dateDifference > 1) ? `days are` : `day is`; 
+            result.innerText= `Only ${dateDifference} ${day} remaining!` ;
+            
+        }
+        dateDiffProd2();
+
+    </script>
 
 </body>
 </html>
