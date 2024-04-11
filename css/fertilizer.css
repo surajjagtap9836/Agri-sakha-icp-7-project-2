@@ -14,3 +14,16 @@
     color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+.quantity-btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.btn-quantity{
+    height: 25px;
+}
+.quantity-text{
+    font-size: 25px;
+    margin: auto 10px;
+}
