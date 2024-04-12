@@ -53,9 +53,8 @@ nav{
     border-radius: none;
     background-color: white; 
   }
-  .active{
-     border: 1px solid #ffff
-     
+  .active-mode{
+    border: 1.5px solid;    
   }
   .theme-dark{
     background-color: black;
