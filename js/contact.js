@@ -1,5 +1,5 @@
 function submitDetails() {
-    alert("Your Message was successfully submitted!")
+    alert("Your Message was successfully submitted, We will Contact you soon!");
 }
 
 function timer(){
