@@ -12,6 +12,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/contact.css">
     <link rel="stylesheet" href="../js/contact.js">
+    <script src="../js/contact.js"></script>
 </head>
 
 <body>
@@ -63,19 +64,22 @@
         <div class="row">
             <div class="col-sm-6 col-md-11 col-lg-6  mx-auto">
                 <form class="form">
+                    <div class="timer card-text p-2 h2 m-3 border-2 rounded-3 border border-black  bg-body-tertiary rounded" id="clock">
+                    </div>
                     <div class="mb-3">
+                        
                         <input type="text" class="form-control" id="name" aria-describedby="emailHelp"
-                            placeholder="Enter Your Name" required>
+                            placeholder="Enter Your Name" required class="input">
                     </div>
                     <div class="mb-3">
 
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="Enter Your Email" required>
+                            placeholder="Enter Your Email" required class="input">
                     </div>
                     <div class="mb-3">
 
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"
-                           required ></textarea>
+                           required class="input"></textarea>
                     </div>
                     <button type="submit" class="button  d-block mx-auto m-5 fs-4 bg-success"
                         onclick="submitDetails()">Send Message</button>
@@ -99,8 +103,8 @@
             <h6 class="text-center margin"><a href="mailto:suraj@roadtocode.org"
                     style="text-decoration: none; color: black;">agri_sakha@gmail.com</a></h6>
                     <div class="flex">
-                        <img src="../Images/contact img/contact_us_illustration.png" alt="" class="img">
-                        <img src="../Images/contact img/message_send.png" alt="" width="500" class="img">
+                        <img src="../Images/contact img/contact_us_illustration.png" alt="" class="img-1">
+                        <img src="../Images/contact img/message_send.png" alt="" width="500" class="img-2">
                     </div>
 
                     <h2 class="text-center">Find Us On Map</h2>
@@ -216,13 +220,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
-        <script>
-            
-            function submitDetails() {
-                alert("Your Message was successfully submitted!")
-            }
-        </script>
 </body>
 
 </html>
