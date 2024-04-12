@@ -11,7 +11,7 @@
 
     <link rel="stylesheet" href="./../css/fertilizer.css"/>
 
-    <link rel="stylesheet" href="./../js/"
+    
 </head>
 <body id="body"> 
 
@@ -68,7 +68,7 @@
         <div class=" col-lg-3 col-md-6 col-sm-12">
            <div class="shadow m-3 p3 rounded border">
              <img src="./../Images/fertilizer img/allbor-boron.png" class="height d-block mx-auto m-3"/>
-             <p class="m-4">
+             <p class=" bold m-4">
                 Multiplex Allbor Boron 20% Micro Nutrient Fertilizer, Helps In Improving Flower And Fruit Setting
                 Improves Root Development
              </p>
@@ -76,11 +76,11 @@
              <p class="text-center">1 Ltr x 5 Qty</p>
 
              <div class="text-center">
-                <span class="text-decoration-line-through">Rs1500.00/- </span>Rs884.00/-
+                <span class="text-decoration-line-through bold">Rs1500.00/-</span> <span class="bold">Rs884.00</span>
                 <span class="badge rounded-pill text-bg-primary">50%OFF</span>
 
                 <p id="show-quantity">1*884</p>
-                <p id="show-total">Total : 884</p>
+                <p class="bold" id="show-total">Total : 884</p>
 
                 <div class="quantity-btn-container">
                    <img src="./../icon/dec.png" class="btn-quantity" onclick="dec()"/>
@@ -97,14 +97,14 @@
                 <div class=" col-lg-3 col-md-6 col-sm-12">
                    <div class="shadow m-3 p3 rounded border">
                      <img src="./../Images/fertilizer img/super-nova.png" class="height d-block mx-auto m-3"/>
-                     <p class="m-4">
+                     <p class="bold m-4">
                         Super Nova - 100% Natural Seaweed  Bio Stimulant, Improves Root Development
                      </p>
                      <p class="text-center">1.00 liter</p>
                      <p class="text-center">1 Ltr x 1 Qty</p>
         
                      <p class="text-center">
-                        <span class="text-decoration-line-through">Rs1042.00/- </span>Rs599.00/-
+                        <span class="text-decoration-line-through bold">Rs1042.00/- </span> <span class="bold">Rs599.00/-</span>
                         <span class="badge rounded-pill text-bg-primary">50%OFF</span>
                         </p>
                     <button class="button  d-block mx-auto m-5 fs-4 bg-success">Buy Now</button>
@@ -114,7 +114,7 @@
                 <div class=" col-lg-3 col-md-6 col-sm-12">
                     <div class="shadow m-3 p3 rounded border">
                           <img src="./../Images/fertilizer img/humic-acid.png" class="height d-block mx-auto m-3"/>
-                          <p class="m-4">
+                          <p class="bold m-4">
                             HUBEL - Humic Acid 95% , Suitable For All Crops, 
                             Increase Root Mass and Brix Level, 
                           </p>
@@ -122,7 +122,7 @@
                           <p class="text-center">250 Gm x 1 Qty</p>
              
                           <p class="text-center">
-                             <span class="text-decoration-line-through">Rs749.00/- </span>Rs199.00/-
+                             <span class="text-decoration-line-through bold">Rs749.00/- </span> <span class="bold">Rs199.00/-</span>
                              <span class="badge rounded-pill text-bg-primary">50%OFF</span>
                              </p>
                          <button class="button  d-block mx-auto m-5 fs-4 bg-success">Buy Now</button>
@@ -132,14 +132,14 @@
                     <div class=" col-lg-3 col-md-6 col-sm-12">
                         <div class="shadow m-3 p3 rounded border">
                               <img src="./../Images/fertilizer img/swal-tekon.png" class="height d-block mx-auto m-3"/>
-                              <p class="m-4">
+                              <p class="bold m-4">
                                 Swal Tekon GR Mycorrhizal Bio Fertilizer,The Nutrient Uptake And Improves The Rhizosphere
                               </p>
                               <p class="text-center">1.00 kg</p>
                               <p class="text-center">1 kg x 1 Qty</p>
                  
                               <p class="text-center">
-                                 <span class="text-decoration-line-through">Rs835.00/- </span>Rs691.00/-
+                                 <span class="text-decoration-line-through bold">Rs835.00/- </span> <span class="bold"> Rs691.00/-</span>
                                  <span class="badge rounded-pill text-bg-primary">50%OFF</span>
                                  </p>
                              <button class="button  d-block mx-auto m-5 fs-4 bg-success">Buy Now</button>
@@ -248,15 +248,17 @@
     </footer>
 
     <script>
+
+    const quantityText = document.getElementById("quantity-text");
+    
+    const showQuantity = document.getElementById("show-quantity");
+
+    const showTotal = document.getElementById("show-total");
+
+    let quantity = parseInt(quantityText.innerText);
+ 
         function inc(){
-            const quantityText = document.getElementById("quantity-text");
-    
-            const showQuantity = document.getElementById("show-quantity");
-    
-            const showTotal = document.getElementById("show-total");
-    
-            let quantity = parseInt(quantityText.innerText);
-    
+            
             if(quantity<=5)
             {
                 quantityText.innerText = ++quantity
@@ -270,13 +272,7 @@
             showTotal.innerText = `Total : ${quantity*489}`;
         }
         function dec(){
-            const quantityText = document.getElementById("quantity-text");
-    
-            const showQuantity = document.getElementById("show-quantity");
-    
-            const showTotal = document.getElementById("show-total");
-    
-            let quantity = parseInt(quantityText.innerText);
+            
     
             if(quantity>1)
             {
