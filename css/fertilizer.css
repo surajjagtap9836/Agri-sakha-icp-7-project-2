@@ -9,31 +9,15 @@ body {
 nav{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.theme-icon{
-    height: 30px;
-    width: 30px;
-    cursor: pointer;
-    padding: 10px;
-    border-radius: none;
-    background-color: white; 
-  }
-  .active{
-     border: 1px solid #ffff
-     
-  }
-  .theme-dark{
-    background-color: black;
-    color: white;
-  }
-  .theme-light{
-    background-color:white;
-    color: black;
-  }
 
 .heading{
     text-align: center;
     font-size: 35px;
     margin-top: 20px
+}
+.bold{
+    font: bold;
+    font-size: 20px
 }
 .button{
     background-color: ;
@@ -60,3 +44,24 @@ nav{
     font-size: 25px;
     margin: auto 10px;
 }
+
+.theme-icon{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: none;
+    background-color: white; 
+  }
+  .active{
+     border: 1px solid #ffff
+     
+  }
+  .theme-dark{
+    background-color: black;
+    color: white;
+  }
+  .theme-light{
+    background-color:white;
+    color: black;
+  }
