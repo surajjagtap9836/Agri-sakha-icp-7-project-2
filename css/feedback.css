@@ -1,0 +1,107 @@
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100&display=swap');
+        body {
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            margin-bottom: 20px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            
+        }
+        .heading {
+            border-radius: 5px;
+            text-align: center;
+            font-size: 40px;
+            font-weight: 600;
+            color: white;
+            padding: 10px;
+            font-family: "poppins" , "sans-serif";
+            margin-bottom: 30px;
+
+        }
+        .container-1 {
+            width: 60vw;
+            height: 900px;
+            background-color: white;
+
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+        .form {
+            margin-top: 17px;
+            font-family: "poppins" , "sans-serif";
+        }
+
+        label{
+            font-family: "poppins" , "sans-serif";
+            font-size: 20px;
+            font-weight: 500;
+        }
+        
+        .button{
+            font-weight: 500;
+            font-family: "poppins" , "sans-serif";
+            border: none;
+            border-radius: 5px;
+            padding: 10px 50px;
+            font-size: 20px;
+            cursor: pointer;
+            color: white;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }     
+        .img-1 {
+        width: 600px;
+        margin-left: 20px;
+    }
+   
+  .card {
+   /* background: linear-gradient(90deg, #a1efad 0%, #2da156 100%);*/
+   background-color: white;
+    width: 800px;
+    height: 300px;
+    padding: 20px;
+    border: 1px solid none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 70px;
+  }
+  h1{
+    font-size:70px;
+  }
+
+  .stars-container {
+    display: flex;
+    justify-content: center;
+   
+  }
+
+  .stars {
+    font-size: 60px;
+    color: gold;
+    cursor: pointer;
+  }
+
+  .user-rating {
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .stars {
+      font-size: 16px;
+    }
+    .card{
+        width:150px;
+    }
+    h1{
+        font-size: 20px;
+    }
+  }
+
