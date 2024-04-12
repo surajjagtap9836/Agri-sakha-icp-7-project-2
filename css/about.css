@@ -16,6 +16,12 @@ nav{
 
 }
 
+.introd_div{
+    height: 400px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
 .main_image{
     height: 350px;
     width: 450px;
@@ -30,6 +36,9 @@ nav{
     border-radius: 10px;
 }
 
+.font_size{
+    font-size: 30px;
+}
 .mission_image{
     height: 300px;
 }
@@ -38,10 +47,13 @@ nav{
     text-align: left;
 }
 
-.information_image{
-    
-}
+
 
 .card_img{
     height: 250px;
+}
+
+.social-icon{
+    margin: 5px 4px;
+    text-decoration: none;
 }
