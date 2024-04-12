@@ -5,13 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seed page</title>
     <link rel="stylesheet" href="./../css/seed.css"/>
+    <link rel="stylesheet" href="./../js/seed.js"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   </head>
 <body id="body">
+  
+<nav class="navbar navbar-expand-lg bg-light mx-4 mt-3 rounded">
+<div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="../Images/index Img/logo (2).png" alt="" height="60"></a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+    aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+</button>
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link active fs-4 " aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active fs-4 " href="#">Updates</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active fs-4 " href="#">Shop</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active fs-4 " href="#">Book Meeting</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active fs-4 " href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active fs-4 " href="#">Contact Us</a>
+            </li>
+
+        </ul>
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-btn">
+                <a class="btn  fs-4" href="#">Login</a>
+            </li>
+            <li class="nav-btn">
+                <a class="btn btn-success  fs-4" href="#">Register</a>
+            </li>
+        </ul>
+    </div>
+</div>
+</nav>
+
+
   <div class="container text-center">
     <div class="row">
       <div class="col" >
-  <img src="./../Images/sees img/dark-mode.png" class="theme-icon active " id="img-dark" 
+  <img src="./../Images/sees img/dark-mode.png" class="theme-icon active-mode " id="img-dark" 
   onclick="darkMode()"/>
 </div>
   <div class="col">
@@ -26,53 +72,68 @@
 <div class="container text-center">
     <div class="row">
       <div class="col shadow m-3 p3 rounded border">
-        <img src="./../Images/sees img/iris-jpg.jpg"  class="height d-block mx-auto m-3 " id="bulb" onclick="turnon()"/>
-        <p>Iris Hybrid Vegetable Seeds F1 Hot Pepper (Chilli) IHS 990, Light Green And Red Color, Achari Variety</p>
+        <img src="./../Images/sees img/iris-jpg.jpg"  class="height d-block mx-auto m-3 "/>
+        <p  class="fw-bolder">Iris Hybrid Vegetable Seeds F1 Hot Pepper (Chilli) IHS 990, Light Green And Red Color.</p>
         <h4>10.00gm</h4>
         <h6>₹564.00 <del>₹624.00</del></h6>
         <h6>Disount:₹56.00</h6>
-        <p id="show-quantity">1*564</p>
-        <p id="show-total"><b>Total price:₹564</b></p>
+        <p class="fw-semibold" id="show-quantity" >1*564</p>
+        <p class="fw-semibold" id="show-total">Total price:₹564</p>
         <div class="quantity-btn-container">
           <img src="./../Images/sees img/3941860.png" class="btn-increase" onclick="dec()"/>
           <span class="quan-text" id="quantity-text">1</span>
           <img src="./../Images/sees img/5392715.png" class="btn-increase" onclick="inc()"/>
         </div>
-        <button class="btn-buy-now">Buy Now</button>
+        <button class="button  d-block mx-auto m-5 fs-4 bg-success">Order Now</button>
       </div>
-      <div class="col shadow m-3 p3 rounded border">
+
+      <div class="col shadow  m-3 p3 rounded border">
         <img src="./../Images/sees img/sarpan-.jpeg"  class="height d-block mx-auto m-3"/>
-        <p>Sarpan Hybrid Spinach Seeds SP 11, Profuse Foliage, Uniform Green Tender, Broad Leaves.</p>
+        <p class="fw-bolder">Sarpan Hybrid Spinach Seeds SP 11, Profuse Foliage, Uniform Green Tender, Broad Leaves.</p>
         <h4>25.00gm</h4>
         <h6>₹640.00 <del>₹724.00</del></h6>
         <h6>Disount:₹66.00</h6>
-        <p id="show-quantity">1*640</p>
-        <p id="show-total"><b>Total price:₹640</b></p>
+        <p  class="fw-semibold" id="show-quantity1">1*640</p>
+        <p class="fw-semibold" id="show-total1"><b>Total price:₹640</b></p>
         <div class="quantity-btn-container">
           <img src="./../Images/sees img/3941860.png" class="btn-increase" onclick="dec1()"/>
-          <span class="quan-text" id="quantity-text">1</span>
+          <span class="quan-text" id="quantity-text1">1</span>
           <img src="./../Images/sees img/5392715.png" class="btn-increase" onclick="inc1()"/>
         </div>
-        <button class="btn-buy-now">Buy Now</button>
+        <button class="button  d-block mx-auto m-5 fs-4 bg-success">Order Now</button>
         </div>
 
       <div class="col shadow m-3 p3 rounded border">
         <img src="./../Images/sees img/kashmiri4.jpeg" class="height d-block mx-auto m-3" />
-       <p> Sarpan Hybrid F1 Kashmiri Mirch Seeds , Kashmiri Mirch ke Beej, Best Quality.</p>
+       <p  class="fw-bolder"> Sarpan Hybrid F1 Kashmiri Mirch Seeds , Kashmiri Mirch ke Beej, Best Quality.</p>
        <h4>10.00 gm</h4>
-       <h6>₹700.00 <del>₹724.00</del></h6>
-        <h6>Disount:₹24.00</h6>
-        <button class="btn-buy-now">Buy Now</button>
+       <h6>₹800.00 <del>₹890.00</del></h6>
+        <h6>Disount:₹90.00</h6>
+       <p class="fw-semibold" id="show-quantity2">1*800</p>
+        <p class="fw-semibold" id="show-total2"><b>Total price:₹800</b></p>
+        <div class="quantity-btn-container">
+            <img src="./../Images/sees img/3941860.png" class="btn-increase" onclick="dec2()"/>
+          <span class="quan-text" id="quantity-text2">1</span>
+          <img src="./../Images/sees img/5392715.png" class="btn-increase" onclick="inc2()"/>
+        </div>
+        <button class="button  d-block mx-auto m-5 fs-4 bg-success">Order Now</button>
     </div>
 
       <div class="col shadow m-3 p3 rounded border">
         <img src="./../Images/sees img/hybrid-jpeg.jpeg" class="height d-block mx-auto m-3" />
-        <p>Iris Hybrid Vegetable Capsicum Seeds , For All Seasons, Grown On Terrace Or Outdoors.
+        <p  class="fw-bolder">Iris Hybrid Vegetable Capsicum Seeds , For All Seasons, Grown On Terrace Or Outdoors.
         </p>
         <h4>  15.00 no</h4>
-        <h6>₹200.00 <del>₹250.00</del></h6>
-        <h6>Disount:₹50.00</h6>
-        <button class="btn-buy-now">Buy Now</button>
+        <h6>₹164.00 <del>₹249.00</del></h6>
+        <h6>Disount:₹85.00</h6>
+        <p class="fw-semibold" id="show-quantity3">1*164</p>
+        <p class="fw-semibold" id="show-total3"><b>Total price:₹164</b></p>
+        <div class="quantity-btn-container">
+            <img src="./../Images/sees img/3941860.png" class="btn-increase" onclick="dec3()"/>
+          <span class="quan-text" id="quantity-text3">1</span>
+          <img src="./../Images/sees img/5392715.png" class="btn-increase" onclick="inc3()"/>
+        </div>
+        <button class="button  d-block mx-auto m-5 fs-4 bg-success">Order Now</button>
      </div>
      </div>
      </div>
@@ -81,48 +142,163 @@
         <div class="row">
           <div class="col shadow m-3 p3 rounded border">
             <img src="./../Images/sees img/gentax-jpeg.jpeg" class="height d-block mx-auto m-3" />
-            <p>Gentex Hybrid Black Color Mustard Seeds HD 3031, Sarson Ke Beej, Sarsav.</p>
+            <p  class="fw-bolder">Gentex Hybrid Black Color Mustard Seeds HD 3031, Sarson Ke Beej, Sarsav.</p>
             <h4>75.00gm</h4>
-            <h6>₹999.00 <del>₹1125.00</del></h6>
-            <h6>Disount:₹126.00</h6>
-            <button class="btn-buy-now">Buy Now</button>
+            <h6>₹340.00 <del>₹524.00</del></h6>
+        <h6>Disount:₹168.00</h6>
+            <p  class="fw-semibold"id="show-quantity4"><b>1*340</b></p>
+        <p  class="fw-semibold" id="show-total4"><b>Total price:₹340</b></p>
+        <div class="quantity-btn-container">
+            <img src="./../Images/sees img/3941860.png" class="btn-increase" onclick="dec4()"/>
+          <span class="quan-text" id="quantity-text4">1</span>
+          <img src="./../Images/sees img/5392715.png" class="btn-increase" onclick="inc4()"/>
+        </div>
+        <button class="button  d-block mx-auto m-5 fs-4 bg-success">Order Now</button>
           </div>
           <div class="col shadow m-3 p3 rounded border">
             <img src="./../Images/sees img/tokai-jpeg.jpeg" class="height d-block mx-auto m-3" />
-            <p>Tokai Imported Radish Scarlett Globe Seeds, Muli Ke Beej, Videsi Muda Na Bee.</p>
+            <p  class="fw-bolder">Tokai Imported Radish Scarlett Globe Seeds, Muli Ke Beej, Videsi Muda Na Bee.</p>
             <h4>10.00gm</h4>
-            <h6>₹2000.00 <del>₹3270.00</del></h6>
-            <h6>Disount:₹1270.00</h6>
-            <button class="btn-buy-now">Buy Now</button>
+            <h6>₹499.00 <del>₹999.00</del></h6>
+        <h6>Disount:₹500.00</h6>
+            <p  class="fw-semibold" id="show-quantity5"><b>1*499</b></p>
+        <p class="fw-semibold" id="show-total5"><b>Total price:₹499</b></p>
+        <div class="quantity-btn-container">
+            <img src="./../Images/sees img/3941860.png" class="btn-increase" onclick="dec5()"/>
+          <span class="quan-text" id="quantity-text5">1</span>
+          <img src="./../Images/sees img/5392715.png" class="btn-increase" onclick="inc5()"/>
+        </div>
+        <button class="button  d-block mx-auto m-5 fs-4 bg-success">Order Now</button>
           </div>
           <div class="col shadow m-3 p3 rounded border">
             <img src="./../Images/sees img/sk-oraganic-jpg.jpg" class="height d-block mx-auto m-3"/>
-           <p> SK ORGANIC ODC3 Moringa Seeds, High Yielding Moringa Variety Seeds 100% Authentic.</p>
+           <p  class="fw-bolder"> SK ORGANIC ODC3 Moringa Seeds, High Yielding Moringa Variety Seeds 100% Authentic.</p>
            <h4>50.00 gm</h4>
-           <h6>₹499.00 <del>₹999.00</del></h6>
-            <h6>Disount:₹500.00</h6>
-            <button class="btn-buy-now">Buy Now</button>
-
+           <h6>₹1799.00 <del>₹1900.00</del></h6>
+        <h6>Disount:₹101.00</h6>
+           <p class="fw-semibold" id="show-quantity6"><b>1*1799</b></p>
+        <p class="fw-semibold" id="show-total6"><b>Total price:₹1799</b></p>
+        <div class="quantity-btn-container">
+            <img src="./../Images/sees img/3941860.png" class="btn-increase" onclick="dec6()"/>
+          <span class="quan-text" id="quantity-text6">1</span>
+          <img src="./../Images/sees img/5392715.png" class="btn-increase" onclick="inc6()"/>
+        </div>
+        <button class="button  d-block mx-auto m-5 fs-4 bg-success">Order Now</button>
           </div>
           <div class="col shadow m-3 p3 rounded border">
             <img src="./../Images/sees img/cauliflower-jpeg.jpeg" class="height d-block mx-auto m-3" />
-            <p>Hybrid Cauliflower Snow White Seeds, Gobhi Ke Beej, Kobi Na Bee, Medium - Large Compact Frame.
+            <p  class="fw-bolder">Hybrid Cauliflower Snow White Seeds, Gobhi Ke Beej, Kobi Na Bee, Medium - Large Compact Frame.
             </p>
             <h4>   50.00 gm</h4>
-            <h6>₹2200.00 <del>₹5250.00</del></h6>
-            <h6>Disount:₹ 2835.00</h6>
-            <button class="btn-buy-now">Buy Now</button>
-
+            <h6>₹1651.00 <del>₹3225.00</del></h6>
+        <h6>Disount:₹1554.00</h6>
+            <p class="fw-semibold" id="show-quantity7"><b>1*1691</b></p>
+            <p  class="fw-semibold" id="show-total7"><b>Total price:₹1691</b></p>
+            <div class="quantity-btn-container">
+                <img src="./../Images/sees img/3941860.png" class="btn-increase" onclick="dec7()"/>
+              <span class="quan-text" id="quantity-text7">1</span>
+              <img src="./../Images/sees img/5392715.png" class="btn-increase" onclick="inc7()"/>
+            </div>
+            <button class="button  d-block mx-auto m-5 fs-4 bg-success">Order Now</button>
           </div>
         </div>
         </div>
+
+
+        <footer class="bg-light text-dark pt-5 pb-4 footer-shadow mt-4" style="box-shadow: #8bc052 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;">
+          <div class="container text-center text-md-left">
+              <div class="row text-center text-md-left">
+                  <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                      <h5 class="text-uppercase mb-4 fw-bold" style="color: #8bc052">AGRIसखा</h5>
+                      <p class="fw-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, debitis blanditiis modi fugit quae ex excepturi voluptatibus, labore, adipisci iste sit atque ea! Quis nisi cumque earum porro, nostrum ad.
+                      </p>
+                  </div>
+                  <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                      <h5 class="text-uppercase mb-4 fw-bold" style="color: #8bc052">Quick Links</h5>
+                      <p class="fw-semibold">
+                          <a href="#" class="text-dark" style="text-decoration: none;">TheProviders</a>
+                      </p>
+                      <p class="fw-semibold">
+                          <a href="#" class="text-dark" style="text-decoration: none;">Creativity</a>
+                      </p>
+                      <p class="fw-semibold">
+                          <a href="#" class="text-dark" style="text-decoration: none;">SourceFiles</a>
+                      </p>
+                      <p class="fw-semibold">
+                          <a href="#" class="text-dark" style="text-decoration: none;">Bootstrap 5 Alpha</a>
+                      </p>
+                  </div>
+                  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                      <h5 class="text-uppercase mb-4 fw-bold" style="color:#8bc052">Useful Links</h5>
+                      <p class="fw-semibold">
+                          <a href="#" class="text-dark" style="text-decoration: none;">TheProviders</a>
+                      </p>
+                      <p class="fw-semibold">
+                          <a href="#" class="text-dark" style="text-decoration: none;">Creativity</a>
+                      </p>
+                      <p class="fw-semibold">
+                          <a href="#" class="text-dark" style="text-decoration: none;">SourceFiles</a>
+                      </p>
+                      <p class="fw-semibold">
+                          <a href="#" class="text-dark" style="text-decoration: none;">Bootstrap 5 Alpha</a>
+                      </p>
+                  </div>
+                  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                      <h5 class="text-uppercase mb-4 fw-bold" style="color: #8bc052">Contact Us</h5>
+                      <p class="fw-semibold">
+                                  
+                          <i class="fas fa-home me-3"></i><a href="#" style="text-decoration: none; color: black;">Hingna,Nagpur-440016</a></p>
+                      <p class="fw-semibold">
+                          <i class="fas fa-envelope me-3"></i><a href="mailto:suraj@roadtocode.org" style="text-decoration: none; color: black;">agri_sakha@gmail.com</a></p>
+                      <p class="fw-semibold">
+                          <i class="fas fa-phone me-3"></i><a href="tel:+91 9145724878" style="text-decoration: none; color: black;">+91 9145724878</a></p>
+                          <p class="fw-semibold">
+                              <i class="fas fa-phone me-3"></i><a href="tel:+91 9145724878" style="text-decoration: none; color: black;">+91 9145346103</a></p> 
+                  </div>
+                  <hr class="mb-4">
+                  <div class="col-md-7 col-lg-8">
+                      <p class="fw-semibold">Copyright ©2024 All  rights reserved By:
+                          <a href="#" style="text-decoration: none;">
+                          <strong style="color: #8bc052;" >AGRIसखा</strong></a>.
+                      </p>
+                  </div>
+                  <div class="col-md-5 col-lg-4">
+                      <div class="text-center text-md-right">
+                          <ul class="list-unstyled list-inline">
+                              <li>
+                                  <a class="btn btn-outline-dark btn-floating m-1" href="#">
+                                     <img src="./img/facebook.png" alt="" height="32">
+                                  </a>
+                                  <a class="btn btn-outline-dark btn-floating m-1" href="#">
+                                      <img src="./img/twitter.png" alt="" height="32">
+                                  </a>
+                                  <a class="btn btn-outline-dark btn-floating m-1" href="#">
+                                      <img src="./img/instagram.png" alt="" height="32">
+                                  </a>
+                                  <a class="btn btn-outline-dark btn-floating m-1" href="#">
+                                      <img src="./img/github.png" alt="" height="32">
+                                  </a>
+                                  <a class="btn btn-outline-dark btn-floating m-1" href="#">
+                                      <img src="./img/linkedin.png" alt="" height="32">
+                                  </a>
+  
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </footer>
+  
+  
+  
+
 
         <script>
             const quantityText=document.getElementById(`quantity-text`);
               const showQuantity=document.getElementById(`show-quantity`);
               const showTotal=document.getElementById(`show-total`);
-          
-                //first card
+              //first card
                 function inc(){
               let quantity=parseInt(quantityText.innerText);
               if(quantity<=5){
@@ -152,37 +328,234 @@
               showTotal.innerText =`Total:${quantity*564}`;
 
               }
-              //second
-               
-               function inc1(){
-              let quantity=parseInt(quantityText.innerText);
+              //second card
+              const quantityText1=document.getElementById(`quantity-text1`);
+              const showQuantity1=document.getElementById(`show-quantity1`);
+              const showTotal1=document.getElementById(`show-total1`);
+              function inc1(){
+              let quantity=parseInt(quantityText1.innerText);
               if(quantity<=5){
-                quantityText.innerText = ++quantity;
+                quantityText1.innerText = ++quantity;
               }
               else
               {
                 alert("You have met offer for 25%")
               }
-              setTotalAmount(quantity);
+              setTotalAmount1(quantity);
             }
             function dec1(){
-              const quantity=parseInt(quantityText.innerText);
+              const quantity=parseInt(quantityText1.innerText);
 
               if(quantity>1){
-                quantityText.innerText = quantity-1;
+                quantityText1.innerText = quantity-1;
               }
               else
               {
                 alert("You have met not offer for 1 product")
               }
-              setTotalAmount(quantity);
+              setTotalAmount1(quantity);
             }
             //end
-             function setTotalAmount(quantity){
-                showQuantity.innerText =` ${quantity}*640`;
-              showTotal.innerText =`Total:${quantity*640}`;
+             function setTotalAmount1(quantity){
+                showQuantity1.innerText =` ${quantity}*640`;
+              showTotal1.innerText =`Total:${quantity*640}`;
 
               }
+              //Third card
+              const quantityText2=document.getElementById(`quantity-text2`);
+              const showQuantity2=document.getElementById(`show-quantity2`);
+              const showTotal2=document.getElementById(`show-total2`);
+              function inc2(){
+              let quantity=parseInt(quantityText2.innerText);
+              if(quantity<=5){
+                quantityText2.innerText = ++quantity;
+              }
+              else
+              {
+                alert("You have met offer for 25%")
+              }
+              setTotalAmount2(quantity);
+            }
+            function dec2(){
+              const quantity=parseInt(quantityText2.innerText);
+
+              if(quantity>1){
+                quantityText2.innerText = quantity-1;
+              }
+              else
+              {
+                alert("You have met not offer for 1 product")
+              }
+              setTotalAmount2(quantity);
+            }
+            //end
+             function setTotalAmount2(quantity){
+                showQuantity2.innerText =` ${quantity}*800`;
+              showTotal2.innerText =`Total:${quantity*800}`;
+              }
+               //Fourth card
+               const quantityText3=document.getElementById(`quantity-text3`);
+              const showQuantity3=document.getElementById(`show-quantity3`);
+              const showTotal3=document.getElementById(`show-total3`);
+              function inc3(){
+              let quantity=parseInt(quantityText3.innerText);
+              if(quantity<=5){
+                quantityText3.innerText = ++quantity;
+              }
+              else
+              {
+                alert("You have met offer for 25%")
+              }
+              setTotalAmount3(quantity);
+            }
+            function dec3(){
+              const quantity=parseInt(quantityText3.innerText);
+
+              if(quantity>1){
+                quantityText3.innerText = quantity-1;
+              }
+              else
+              {
+                alert("You have met not offer for 1 product")
+              }
+              setTotalAmount3(quantity);
+            }
+            //end
+             function setTotalAmount3(quantity){
+                showQuantity3.innerText =` ${quantity}*164`;
+              showTotal3.innerText =`Total:${quantity*164}`;
+              }
+               //Fifth card
+               const quantityText4=document.getElementById(`quantity-text4`);
+              const showQuantity4=document.getElementById(`show-quantity4`);
+              const showTotal4=document.getElementById(`show-total4`);
+              function inc4(){
+              let quantity=parseInt(quantityText4.innerText);
+              if(quantity<=5){
+                quantityText4.innerText = ++quantity;
+              }
+              else
+              {
+                alert("You have met offer for 25%")
+              }
+              setTotalAmount4(quantity);
+            }
+            function dec4(){
+              const quantity=parseInt(quantityText4.innerText);
+
+              if(quantity>1){
+                quantityText4.innerText = quantity-1;
+              }
+              else
+              {
+                alert("You have met not offer for 1 product")
+              }
+              setTotalAmount4(quantity);
+            }
+            //end
+             function setTotalAmount4(quantity){
+                showQuantity4.innerText =` ${quantity}*340`;
+              showTotal4.innerText =`Total:${quantity*340}`;
+              }
+               //Six card
+               const quantityText5=document.getElementById(`quantity-text5`);
+              const showQuantity5=document.getElementById(`show-quantity5`);
+              const showTotal5=document.getElementById(`show-total5`);
+              function inc5(){
+              let quantity=parseInt(quantityText5.innerText);
+              if(quantity<=5){
+                quantityText5.innerText = ++quantity;
+              }
+              else
+              {
+                alert("You have met offer for 25%")
+              }
+              setTotalAmount5(quantity);
+            }
+            function dec5(){
+              const quantity=parseInt(quantityText5.innerText);
+
+              if(quantity>1){
+                quantityText5.innerText = quantity-1;
+              }
+              else
+              {
+                alert("You have met not offer for 1 product")
+              }
+              setTotalAmount5(quantity);
+            }
+            //end
+             function setTotalAmount5(quantity){
+                showQuantity5.innerText =` ${quantity}*499`;
+              showTotal5.innerText =`Total:${quantity*499}`;
+              }
+               //  Seven card
+               const quantityText6=document.getElementById(`quantity-text6`);
+              const showQuantity6=document.getElementById(`show-quantity6`);
+              const showTotal6=document.getElementById(`show-total6`);
+              function inc6(){
+              let quantity=parseInt(quantityText6.innerText);
+              if(quantity<=5){
+                quantityText6.innerText = ++quantity;
+              }
+              else
+              {
+                alert("You have met offer for 25%")
+              }
+              setTotalAmount6(quantity);
+            }
+            function dec6(){
+              const quantity=parseInt(quantityText6.innerText);
+
+              if(quantity>1){
+                quantityText6.innerText = quantity-1;
+              }
+              else
+              {
+                alert("You have met not offer for 1 product")
+              }
+              setTotalAmount6(quantity);
+            }
+            //end
+             function setTotalAmount6(quantity){
+                showQuantity6.innerText =` ${quantity}*1799`;
+              showTotal6.innerText =`Total:${quantity*1799}`;
+              }
+               //  Eight card
+               const quantityText7=document.getElementById(`quantity-text7`);
+              const showQuantity7=document.getElementById(`show-quantity7`);
+              const showTotal7=document.getElementById(`show-total7`);
+              function inc7(){
+              let quantity=parseInt(quantityText7.innerText);
+              if(quantity<=5){
+                quantityText7.innerText = ++quantity;
+              }
+              else
+              {
+                alert("You have met offer for 25%")
+              }
+              setTotalAmount7(quantity);
+            }
+            function dec7(){
+              const quantity=parseInt(quantityText7.innerText);
+
+              if(quantity>1){
+                quantityText7.innerText = quantity-1;
+              }
+              else
+              {
+                alert("You have met not offer for 1 product")
+              }
+              setTotalAmount7(quantity);
+            }
+            //end
+             function setTotalAmount7(quantity){
+                showQuantity7.innerText =` ${quantity}*1691`;
+              showTotal7.innerText =`Total:${quantity*1691}`;
+              }
+              
+               
+               
               //dark and light mode
               function darkMode(){
   const imgDark = document.getElementById(`img-dark`);
@@ -205,19 +578,7 @@ function lightMode(){
   bodyElement.className=`theme-light`;
 
 }
-//on off
-function turnon(){
-        const bulbElement = document.getElementById('bulb');
-       bulbElement.src =`sarpan-jpeg`;
-    }
-    function turnoff(){
-        const bulbElement = document.getElementById('bulb');
-        bulbElement.src=`lightbulb-off-png`;
-    }
-    function turnoff(){
-        const bulbElement = document.getElementById('bulb');
-        bulbElement.src=`lightbulb-off-png`;
-    }
+
             
 
         
