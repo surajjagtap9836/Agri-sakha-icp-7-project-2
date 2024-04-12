@@ -1,0 +1,35 @@
+/* Common CSS */
+
+nav {
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.container-1 {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.button{
+    font-weight: 500;
+    font-family: "poppins" , "sans-serif";
+    border: none;
+    border-radius: 5px;
+    padding: 10px 50px;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* Update Page */
+.img{
+    height: 380px;
+}
+.img1{
+    height: 400px;
+    width: 503px;
+}
+.timer{
+    width: 28%;
+}
+
