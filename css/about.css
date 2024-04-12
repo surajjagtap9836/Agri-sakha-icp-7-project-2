@@ -17,8 +17,8 @@ nav{
 }
 
 .main_image{
-    height: 500px;
-    width: 500px;
+    height: 350px;
+    width: 450px;
     border-radius: 10px;
 }
 
@@ -36,4 +36,12 @@ nav{
 
 .mission_text{
     text-align: left;
+}
+
+.information_image{
+    
+}
+
+.card_img{
+    height: 250px;
 }
