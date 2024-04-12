@@ -1,0 +1,57 @@
+.heading-seed{
+    text-align: center;
+    font-size: 35px;
+}
+.btn-buy-now{
+background-color: #8bc052;
+}
+.quantity-btn-container{
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+}
+.btn-increase{
+width:25px;
+padding:3px;
+cursor: pointer;
+}
+.quan-text{
+margin: auto 10px;
+cursor: pointer;
+font-size: 25px;
+}
+.mode{
+width: 20px;
+}
+
+/*javascript code css */
+
+.theme-icon{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: none;
+    background-color: white; 
+  }
+  .active{
+     border: 1px solid rgb(214, 53, 53);
+     
+  }
+  .theme-dark{
+    background-color: black;
+    color: white;
+  }
+  .theme-light{
+    background-color:white;
+    color: black;
+  }
+
+
+
+  /*offer page css */
+  .offer-logo{
+    width: 200px;
+    padding-left: 100px;
+  }
