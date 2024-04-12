@@ -41,3 +41,60 @@ nav {
         height: 150px;
     }
 }
+
+/* Media query : Update_page */
+@media screen and (max-width: 399px) {
+    .container-1{
+        width: 90%;
+    }
+    .timer{
+        width: 40%;
+        font-size: 25px;
+    }
+    .card-text{
+        font-size: 17px;
+    }
+    .img-fluid{
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 768px) {
+    .container-1{
+        width: 90%;
+    }
+    .timer{
+        width: 34%;
+    }
+    .card-text{
+        font-size: 19px;
+    }
+    .img-fluid{
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .container-1{
+        width: 90%;
+    }
+    .timer{
+        width: 30%;
+    }
+    .card-text{
+        font-size: 20px;
+    }
+    .img-fluid{
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 993px) {
+    .timer{
+        width: 30%;
+    }
+    .img-fluid{
+        height: 100%;
+    }
+}
+
