@@ -33,3 +33,11 @@ nav {
     width: 28%;
 }
 
+
+/* Media query : Book Meeting page */
+@media screen and (max-width: 443px) {
+    .card-img{
+        width: 150px;
+        height: 150px;
+    }
+}
