@@ -9,7 +9,7 @@
           }
           else
           {
-            alert("You have met offer for 25%")
+            alert("You can't add more than 6 items....")
           }
           setTotalAmount(quantity);
         }
@@ -21,7 +21,7 @@
           }
           else
           {
-            alert("You have met not offer for 1 product")
+            alert("You can't add Less than 1 items....")
           }
           setTotalAmount(quantity);
         }
@@ -42,43 +42,11 @@
           }
           else
           {
-            alert("You have met offer for 25%")
+            alert("You can't add more than 6 items....")
           }
           setTotalAmount1(quantity);
         }
-        
-          //Third card
-          const quantityText2=document.getElementById(`quantity-text2`);
-          const showQuantity2=document.getElementById(`show-quantity2`);
-          const showTotal2=document.getElementById(`show-total2`);
-          function inc2(){
-          let quantity=parseInt(quantityText2.innerText);
-          if(quantity<=5){
-            quantityText2.innerText = ++quantity;
-          }
-          else
-          {
-            alert("You have met offer for 25%")
-          }
-          setTotalAmount2(quantity);
-        }
-        function dec2(){
-          const quantity=parseInt(quantityText2.innerText);
-
-          if(quantity>1){
-            quantityText2.innerText = quantity-1;
-          }
-          else
-          {
-            alert("You have met not offer for 1 product")
-          }
-          setTotalAmount2(quantity);
-        }
-        //end
-         function setTotalAmount2(quantity){
-            showQuantity2.innerText =` ${quantity}*800`;
-          showTotal2.innerText =`Total:${quantity*800}`;
-          }
+      
            //Fourth card
            const quantityText3=document.getElementById(`quantity-text3`);
           const showQuantity3=document.getElementById(`show-quantity3`);
@@ -90,7 +58,7 @@
           }
           else
           {
-            alert("You have met offer for 25%")
+            alert("You can't add more than 6 items....")
           }
           setTotalAmount3(quantity);
         }
@@ -102,7 +70,7 @@
           }
           else
           {
-            alert("You have met not offer for 1 product")
+            alert("You can't add less than 1 items....")
           }
           setTotalAmount3(quantity);
         }
@@ -122,7 +90,7 @@
           }
           else
           {
-            alert("You have met offer for 25%")
+            alert("You can't add more than 6 items....")
           }
           setTotalAmount4(quantity);
         }
@@ -134,7 +102,7 @@
           }
           else
           {
-            alert("You have met not offer for 1 product")
+            alert("You can't add less than 1 items....")
           }
           setTotalAmount4(quantity);
         }
@@ -160,7 +128,7 @@
           }
           else
           {
-            alert("You have met offer for 25%")
+            alert("You can't add more than 6 items....")
           }
           setTotalAmount6(quantity);
         }
@@ -172,7 +140,7 @@
           }
           else
           {
-            alert("You have met not offer for 1 product")
+            alert("You can't add less than 1 items....")
           }
           setTotalAmount6(quantity);
         }
@@ -192,7 +160,7 @@
           }
           else
           {
-            alert("You have met offer for 25%")
+            alert("You can't add more than 6 items....")
           }
           setTotalAmount7(quantity);
         }
@@ -204,7 +172,7 @@
           }
           else
           {
-            alert("You have met not offer for 1 product")
+            alert("You can't add less than 1 items....")
           }
           setTotalAmount7(quantity);
         }
@@ -212,6 +180,37 @@
          function setTotalAmount7(quantity){
             showQuantity7.innerText =` ${quantity}*1691`;
           showTotal7.innerText =`Total:${quantity*1691}`;
+          }
+          const quantityText2=document.getElementById(`quantity-text2`);
+          const showQuantity2=document.getElementById(`show-quantity2`);
+          const showTotal2=document.getElementById(`show-total2`);
+          function inc2(){
+          let quantity=parseInt(quantityText2.innerText);
+          if(quantity<=5){
+            quantityText2.innerText = ++quantity;
+          }
+          else
+          {
+            alert("You can't add more than 6 items....")
+          }
+          setTotalAmount2(quantity);
+        }
+        function dec2(){
+          const quantity=parseInt(quantityText2.innerText);
+
+          if(quantity>1){
+            quantityText2.innerText = quantity-1;
+          }
+          else
+          {
+            alert("You can't add less than 1 items....")
+          }
+          setTotalAmount2(quantity);
+        }
+        //end
+         function setTotalAmount2(quantity){
+            showQuantity2.innerText =` ${quantity}*1691`;
+          showTotal2.innerText =`Total:${quantity*1691}`;
           }
           
            
