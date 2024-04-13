@@ -87,3 +87,41 @@ nav{
     background-color:white;
     color: black;
   }
+
+
+
+
+ 
+.main-img{
+    height: 400px;
+    width: 600px;
+    display: block;
+    margin: 20px auto;
+    background-color: rgb(251, 251, 252);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.mainimg{
+    width: 100px;
+    height: 300px;
+    padding: 10px 20px;
+    display: block;
+    margin: 0px auto;
+    width: 200px;
+
+}
+.Product-preview{
+    display: flex;
+    justify-content: center;    
+}
+
+.preview{
+height: 80px ;
+width: 150px;
+padding: 10px 20px;
+object-fit: cover;
+cursor: pointer;
+border: 1px solid ;
+border-radius: 5px;
+margin: 10px;
+
+}
