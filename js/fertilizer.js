@@ -211,6 +211,53 @@ let quantity = parseInt(quantityText.innerText);
     }
 
 
+    // card 5
+
+    function inc5(){
+      const quantityText = document.getElementById("quantity-text-5");
+    
+      const showQuantity = document.getElementById("show-quantity-5");
+    
+      const showTotal = document.getElementById("show-total-5");
+    
+    let quantity = parseInt(quantityText.innerText);
+            
+            if(quantity<=5)
+            {
+                quantityText.innerText = ++quantity
+            }
+            else
+            {
+                alert("You have met offer for 25%")
+            }
+    
+            showQuantity.innerText = `${quantity}*777`;
+            showTotal.innerText = `Total : ${quantity*777}`;
+          }
+    
+          function dec5(){
+            const quantityText = document.getElementById("quantity-text-5");
+    
+            const showQuantity = document.getElementById("show-quantity-5");
+    
+            const showTotal = document.getElementById("show-total-5");
+    
+            let quantity = parseInt(quantityText.innerText);
+    
+      
+              if(quantity>1)
+              {
+                  quantityText.innerText = --quantity
+              }
+              else
+              {
+                  alert("You have met not offer for 1 product")
+          }
+      
+              showQuantity.innerText = `${quantity}*777`;
+              showTotal.innerText = `Total : ${quantity*777}`;
+      }
+  
 
 
 
