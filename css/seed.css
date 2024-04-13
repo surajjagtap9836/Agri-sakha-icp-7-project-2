@@ -1,16 +1,23 @@
+<<<<<<< HEAD
 body{
   background-color: #f2f2f2;
 }
 nav{
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+=======
+.main-div{
+  background-color: white;
+}
+      
+
+>>>>>>> 0873a9f78480387e750bae87238bd15c530affb1
 .heading-seed{
     text-align: center;
     font-size: 35px;
     color: #8bc052
 }
 .button{
-  background-color: ;
   font-weight: 500;
   font-family: "poppins" , "sans-serif";
   border: none;
@@ -21,6 +28,7 @@ nav{
   color: white;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
 .quantity-btn-container{
 display: flex;
 justify-content: center;
@@ -43,6 +51,7 @@ width: 20px;
 
 /*javascript code css */
 
+
 .theme-icon{
     height: 30px;
     width: 30px;
@@ -63,10 +72,35 @@ width: 20px;
     color: black;
   }
 
-
-
   /*offer page css */
-  .offer-logo{
-    width: 200px;
-    padding-left: 100px;
-  }
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100&display=swap');
+
+        nav{
+            margin-bottom: 20px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        .container-1 {
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        
+        .img{
+            height: 380px;
+        }
+        .img1{
+            height: 400px;
+            width: 503px;
+        }
+        .button{
+            font-weight: 500;
+            font-family: "poppins" , "sans-serif";
+            border: none;
+            border-radius: 5px;
+            padding: 10px 50px;
+            font-size: 20px;
+            cursor: pointer;
+            color: white;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        .timer{
+            width: 28%;
+        }
