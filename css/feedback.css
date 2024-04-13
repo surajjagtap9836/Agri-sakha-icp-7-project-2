@@ -24,7 +24,7 @@
         }
         .container-1 {
             width: 60vw;
-            height: 60vw;
+            height: auto;
             background-color: white;
 
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -57,19 +57,7 @@
         margin-left: 20px;
     }
    
-  .card {
-   /* background: linear-gradient(90deg, #a1efad 0%, #2da156 100%);*/
-   background-color: white;
-    width: 800px;
-    height: 300px;
-    padding: 20px;
-    border: 1px solid none;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 70px;
-  }
+ 
   h1{
     font-size:70px;
   }
@@ -81,17 +69,19 @@
   }
 
   .stars {
-    font-size: 60px;
+    font-size: 40px;
     color: gold;
     cursor: pointer;
-    margin-top: 90px;
+    margin-top: 60px;
+    
   }
 
   .user-rating {
-    margin-top: 10px;
+    margin-top: 5px;
     font-size: 30px;
     font-weight: bold;
-    margin-left: 150px;
+    margin-left: 90px;
+    margin-bottom: 10px;
   }
 
   /* Responsive adjustments */
