@@ -163,6 +163,53 @@ let quantity = parseInt(quantityText.innerText);
           showTotal.innerText = `Total : ${quantity*691}`;
   }
 
+  // cadr 4
+
+  function inc4(){
+    const quantityText = document.getElementById("quantity-text-4");
+  
+    const showQuantity = document.getElementById("show-quantity-4");
+  
+    const showTotal = document.getElementById("show-total-4");
+  
+  let quantity = parseInt(quantityText.innerText);
+          
+          if(quantity<=5)
+          {
+              quantityText.innerText = ++quantity
+          }
+          else
+          {
+              alert("You have met offer for 25%")
+          }
+  
+          showQuantity.innerText = `${quantity}*776`;
+          showTotal.innerText = `Total : ${quantity*776}`;
+        }
+  
+        function dec4(){
+          const quantityText = document.getElementById("quantity-text-4");
+  
+          const showQuantity = document.getElementById("show-quantity-4");
+  
+          const showTotal = document.getElementById("show-total-4");
+  
+          let quantity = parseInt(quantityText.innerText);
+  
+    
+            if(quantity>1)
+            {
+                quantityText.innerText = --quantity
+            }
+            else
+            {
+                alert("You have met not offer for 1 product")
+        }
+    
+            showQuantity.innerText = `${quantity}*776`;
+            showTotal.innerText = `Total : ${quantity*776}`;
+    }
+
 
 
 
