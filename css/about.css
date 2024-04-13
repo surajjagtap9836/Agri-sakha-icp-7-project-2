@@ -82,6 +82,7 @@ nav{
   .theme-dark{
     background-color: black;
     color: white;
+    box-shadow: white;
   }
   .theme-light{
     background-color:white;
@@ -89,9 +90,6 @@ nav{
   }
 
 
-
-
- 
 .main-img{
     height: 400px;
     width: 600px;
