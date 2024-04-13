@@ -85,7 +85,29 @@ h6 {
     align-items: center;
 }
 
+.timer{
+    font-family: "poppins", "sans-serif";
+    font-size: 20px;
+    font-weight: 500;
+    width: 160px;
+    text-align: center;
+    padding: 10px;
+    font-family: "poppins", "sans-serif";
+    margin-bottom: 30px;
+    display: block;
+    margin: 10px auto;
+}
+
 @media screen and (max-width: 768px) {
+    .heading{
+        text-align: center;
+        font-size: 35px;
+
+   }
+   h2{
+    font-size: 40px;
+   }
+   
     .container-1 {
         width: 90vw;
         height: 1800px;
@@ -93,22 +115,28 @@ h6 {
 
     }
 
-    input {
-        width: 810vw;
+    .img-1 {
+        width: 100px;
     }
-
-    .img {
-        width: 80px;
+    .img-2 {
+        width: 170px;
     }
 }
 
 @media screen and (max-width: 992px) {
+    
     .container-1 {
         width: 90vw;
         height: 1870px;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
-    .img {
+    h2{
+        font-size: 40px;
+       }
+    .img-1 {
+        width: 30%;
+    }
+    .img-2 {
         width: 200px;
     }
 }
