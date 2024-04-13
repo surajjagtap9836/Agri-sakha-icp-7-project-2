@@ -108,37 +108,6 @@
         </div>
        </div>
 
-     
-
-       
- 
-       <!--script tag-->
-       <script>
-         
-         const stars = document.querySelectorAll('.stars');
-         const userRating = document.getElementById('userStars');
-       
-         
-         stars.forEach(star => {
-           star.addEventListener('click', function() {
-             const rating = parseInt(this.getAttribute('data-value'));
-             setUserRating(rating);
-           });
-         });
-       
-         
-         function setUserRating(rating) {
-           userRating.textContent = rating;
-           
-           stars.forEach(star => star.style.color = 'gold');
-           
-           for (let i = 0; i < rating; i++) {
-             stars[i].style.color = 'orange';
-           }
-         }
-       </script>
-     <!--script tag end-->
-
 
 
        <footer class="bg-light text-dark pt-5 pb-4 footer-shadow mt-4" style="box-shadow: #8bc052 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;">
@@ -231,11 +200,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
 </script>
 
-<script>
-    function submitDetail(){
-        alert("your feedback is submited..!")
-    }
-</script>
+<script src="../js/feedback.js"></script>
 
 
 
