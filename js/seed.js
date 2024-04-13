@@ -1,7 +1,7 @@
-const quantityText=document.getElementById(`quantity-text`);
+          const quantityText=document.getElementById(`quantity-text`);
           const showQuantity=document.getElementById(`show-quantity`);
           const showTotal=document.getElementById(`show-total`);
-          //first card
+          
             function inc(){
           let quantity=parseInt(quantityText.innerText);
           if(quantity<=5){
@@ -25,7 +25,7 @@ const quantityText=document.getElementById(`quantity-text`);
           }
           setTotalAmount(quantity);
         }
-        //end
+        
          function setTotalAmount(quantity){
             showQuantity.innerText =` ${quantity}*564`;
           showTotal.innerText =`Total:${quantity*564}`;
@@ -46,24 +46,7 @@ const quantityText=document.getElementById(`quantity-text`);
           }
           setTotalAmount1(quantity);
         }
-        function dec1(){
-          const quantity=parseInt(quantityText1.innerText);
-
-          if(quantity>1){
-            quantityText1.innerText = quantity-1;
-          }
-          else
-          {
-            alert("You have met not offer for 1 product")
-          }
-          setTotalAmount1(quantity);
-        }
-        //end
-         function setTotalAmount1(quantity){
-            showQuantity1.innerText =` ${quantity}*640`;
-          showTotal1.innerText =`Total:${quantity*640}`;
-
-          }
+        
           //Third card
           const quantityText2=document.getElementById(`quantity-text2`);
           const showQuantity2=document.getElementById(`show-quantity2`);
@@ -160,33 +143,7 @@ const quantityText=document.getElementById(`quantity-text`);
             showQuantity4.innerText =` ${quantity}*340`;
           showTotal4.innerText =`Total:${quantity*340}`;
           }
-           //Six card
-           const quantityText5=document.getElementById(`quantity-text5`);
-          const showQuantity5=document.getElementById(`show-quantity5`);
-          const showTotal5=document.getElementById(`show-total5`);
-          function inc5(){
-          let quantity=parseInt(quantityText5.innerText);
-          if(quantity<=5){
-            quantityText5.innerText = ++quantity;
-          }
-          else
-          {
-            alert("You have met offer for 25%")
-          }
-          setTotalAmount5(quantity);
-        }
-        function dec5(){
-          const quantity=parseInt(quantityText5.innerText);
-
-          if(quantity>1){
-            quantityText5.innerText = quantity-1;
-          }
-          else
-          {
-            alert("You have met not offer for 1 product")
-          }
-          setTotalAmount5(quantity);
-        }
+           
         //end
          function setTotalAmount5(quantity){
             showQuantity5.innerText =` ${quantity}*499`;
@@ -281,6 +238,6 @@ const bodyElement=document.getElementById(`body`);
 bodyElement.className=`theme-light`;
 }
 function msg(){
-  alert("hgbfgjkm");
+  alert("Thank you for your order! ");
 }
       
