@@ -1,10 +1,14 @@
+.main-div{
+  background-color: white;
+}
+      
+
 .heading-seed{
     text-align: center;
     font-size: 35px;
     color: #8bc052
 }
 .button{
-  background-color: ;
   font-weight: 500;
   font-family: "poppins" , "sans-serif";
   border: none;
@@ -15,6 +19,7 @@
   color: white;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
 .quantity-btn-container{
 display: flex;
 justify-content: center;
@@ -36,6 +41,7 @@ width: 20px;
 }
 
 /*javascript code css */
+
 
 .theme-icon{
     height: 30px;
