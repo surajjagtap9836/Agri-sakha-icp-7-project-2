@@ -24,7 +24,7 @@
         }
         .container-1 {
             width: 60vw;
-            height: 900px;
+            height: 60vw;
             background-color: white;
 
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -84,12 +84,14 @@
     font-size: 60px;
     color: gold;
     cursor: pointer;
+    margin-top: 90px;
   }
 
   .user-rating {
     margin-top: 10px;
     font-size: 30px;
     font-weight: bold;
+    margin-left: 150px;
   }
 
   /* Responsive adjustments */
