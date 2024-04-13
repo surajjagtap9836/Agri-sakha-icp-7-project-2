@@ -6,7 +6,7 @@ function changeimg(imgname)
 
 
 
-  //dark and light mode
+  /*dark and light mode
   function darkMode(){
                 const imgDark = document.getElementById(`img-dark`);
                 imgDark.classList.add(`active`);
@@ -27,4 +27,4 @@ function lightMode(){
   const bodyElement=document.getElementById(`body`);
   bodyElement.className=`theme-light`;
 
-}   
+} */  
