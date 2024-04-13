@@ -63,3 +63,7 @@ function lightMode(){
   }
 
   // card-2
+// button
+function msg(){
+  alert("Thank you for your order! ");
+}

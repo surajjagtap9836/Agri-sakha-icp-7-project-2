@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="./../css/fertilizer.css"/>
 
     <script src="../js/fertilizer.js"></script>
+   
+
 
 </head>
 <body id="body" class="bg-secondary-subtle"> 
@@ -81,7 +83,7 @@
     </div>
      <!--Dark-Light section end-->
 
-
+     <div class="container text-center main-div">
     <div class="row">
         <!--Casrd-1-->
         <div class=" col-lg-4 col-md-6 col-sm-12 bg">
@@ -107,7 +109,7 @@
               </div>
             </div>
 
-            <button class="button  d-block mx-auto m-5 fs-4 bg-success">Buy Now</button>
+            <button class="button  d-block mx-auto m-5 fs-4 bg-success" onclick="msg()">Order Now</button>
             </div>
             </div>
     <!--Casrd-1-end-->
@@ -131,9 +133,15 @@
                              
                              <p class="fw-semibold" id="show-quantity">1*884</p>
                              <p class="fw-semibold" id="show-total">Total : 884</p>
-                             
+
+                             <div class="quantity-btn-container">
+                                <img src="./../icon/dec.png" class="btn-quantity" onclick="dec()"/>
+                                <span class="quantity-text" id="quantity-text" >1</span>
+                               <img src="./../icon/inc.png" class="btn-quantity" onclick="inc()"/>
+                           </div>
                           </div>
-                         <button class="button  d-block mx-auto m-5 fs-4 bg-success">Buy Now</button>
+
+                         <button class="button  d-block mx-auto m-5 fs-4 bg-success" onclick="msg()">Order Now</button>
                          </div>
                          </div>
     <!--Casrd-2-end-->
@@ -149,16 +157,19 @@
                               <p class="text-center">1.00 kg</p>
                               <p class="text-center">1 kg x 1 Qty</p>
                  
-                              <p class="text-center">
+                              <div class="text-center">
                                  <span class="text-decoration-line-through bold">Rs835.00/- </span> <span class="bold"> Rs691.00/-</span>
-                                 </p>
-                             <button class="button  d-block mx-auto m-5 fs-4 bg-success">Buy Now</button>
+                              </div>
+
+                             <button class="button  d-block mx-auto m-5 fs-4 bg-success" onclick="msg()">Order Now</button>
                         </div>
+                    </div>
                     </div>
     <!--Casrd-3-end-->
 
     <!--Casrd-4-->
-    <div class="row">
+    <div class="container text-center main-div">   
+        <div class="row">
         <div class=" col-lg-4 col-md-6 col-sm-12">
            <div class="shadow m-3 p3 rounded border bg-light">
              <img src="./../Images/fertilizer img/boron.png" class="height d-block mx-auto m-3"/>
@@ -169,11 +180,12 @@
              <p class="text-center">1.00 liter</p>
              <p class="text-center">1 Ltr x 1 Qty</p>
 
-             <p class="text-center">
+             <div class="text-center">
                 <span class="text-decoration-line-through">Rs1250.00/- </span>Rs776.00/-
                 
-                </p>
-            <button class="button  d-block mx-auto m-5 fs-4 bg-success">Buy Now</button>
+             </div>
+
+            <button class="button  d-block mx-auto m-5 fs-4 bg-success" onclick="msg()">Order Now</button>
             </div>
              </div>
              
@@ -192,11 +204,12 @@
               <p class="text-center">1.00 liter</p>
               <p class="text-center">1 Ltr x 1 Qty</p>
 
-              <p class="text-center">
+              <div class="text-center">
                 <span class="text-decoration-line-through">Rs950.00/- </span>Rs777.00/-
                 
-                </p>
-            <button class="button  d-block mx-auto m-5 fs-4 bg-success">Buy Now</button>
+              </div>
+
+            <button class="button  d-block mx-auto m-5 fs-4 bg-success" onclick="msg()">Order Now</button>
             </div>
             </div>
 
@@ -212,10 +225,12 @@
                <p class="text-center">1.00 liter</p>
                <p class="text-center">1 Ltr x 1 Qty</p>
 
-            <p class="text-center">
+            <div class="text-center">
                <span class="text-decoration-line-through">Rs599.00/- </span>Rs546.00/-
-            </p>
-         <button class="button  d-block mx-auto m-5 fs-4 bg-success">Buy Now</button>
+            </div>
+            
+         <button class="button  d-block mx-auto m-5 fs-4 bg-success" onclick="msg()">Order Now</button>
+</div>
 </div>
 </div>
 
@@ -311,52 +326,11 @@
         </div>
     </footer>
 
-    <script>
-
-    const quantityText = document.getElementById("quantity-text");
-    
-    const showQuantity = document.getElementById("show-quantity");
-
-    const showTotal = document.getElementById("show-total");
-
-    let quantity = parseInt(quantityText.innerText);
- 
-        function inc(){
-            
-            if(quantity<=5)
-            {
-                quantityText.innerText = ++quantity
-            }
-            else
-            {
-                alert("You have met offer for 25%")
-            }
-    
-            showQuantity.innerText = `${quantity}*489`;
-            showTotal.innerText = `Total : ${quantity*489}`;
-        }
-        function dec(){
-            
-    
-            if(quantity>1)
-            {
-                quantityText.innerText = --quantity
-            }
-            else
-            {
-                alert("You have met not offer for 1 product")
-        }
-    
-            showQuantity.innerText = `${quantity}*489`;
-            showTotal.innerText = `Total : ${quantity*489}`;
-    }
-
-        
-
-</script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+     <script src="../js/fertilizer.js"></script>
      
 </body>
 </html>
