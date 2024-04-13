@@ -24,15 +24,14 @@ function lightMode(){
   // increament - decriment
 
   // card-1
-  const quantityText = document.getElementById("quantity-text");
-    
-  const showQuantity = document.getElementById("show-quantity");
+  function inc(){
+    const quantityText = document.getElementById("quantity-text");
 
-  const showTotal = document.getElementById("show-total");
+    const showQuantity = document.getElementById("show-quantity");
+
+    const showTotal = document.getElementById("show-total");
 
   let quantity = parseInt(quantityText.innerText);
-
-      function inc(){
           
           if(quantity<=5)
           {
@@ -46,8 +45,16 @@ function lightMode(){
           showQuantity.innerText = `${quantity}*489`;
           showTotal.innerText = `Total : ${quantity*489}`;
       }
+      
       function dec(){
-          
+        const quantityText = document.getElementById("quantity-text");
+
+        const showQuantity = document.getElementById("show-quantity");
+
+        const showTotal = document.getElementById("show-total");
+
+        let quantity = parseInt(quantityText.innerText);
+
   
           if(quantity>1)
           {
@@ -63,6 +70,58 @@ function lightMode(){
   }
 
   // card-2
+
+  function inc2(){
+    const quantityText = document.getElementById("quantity-text-2");
+
+    const showQuantity = document.getElementById("show-quantity-2");
+
+    const showTotal = document.getElementById("show-total-2");
+
+  let quantity = parseInt(quantityText.innerText);
+          
+          if(quantity<=5)
+          {
+              quantityText.innerText = ++quantity
+          }
+          else
+          {
+              alert("You have met offer for 25%")
+          }
+  
+          showQuantity.innerText = `${quantity}*199`;
+          showTotal.innerText = `Total : ${quantity*199}`;
+      }
+      
+      function dec2(){
+        const quantityText = document.getElementById("quantity-text-2");
+
+        const showQuantity = document.getElementById("show-quantity-2");
+
+        const showTotal = document.getElementById("show-total-2");
+
+        let quantity = parseInt(quantityText.innerText);
+
+  
+          if(quantity>1)
+          {
+              quantityText.innerText = --quantity
+          }
+          else
+          {
+              alert("You have met not offer for 1 product")
+      }
+  
+          showQuantity.innerText = `${quantity}*199`;
+          showTotal.innerText = `Total : ${quantity*199}`;
+  }
+
+
+
+
+
+
+
 // button
 function msg(){
   alert("Thank you for your order! ");
