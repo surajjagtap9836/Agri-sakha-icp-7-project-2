@@ -1,8 +1,17 @@
+<<<<<<< HEAD
+body{
+  background-color: #f2f2f2;
+}
+nav{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+=======
 .main-div{
   background-color: white;
 }
       
 
+>>>>>>> 0873a9f78480387e750bae87238bd15c530affb1
 .heading-seed{
     text-align: center;
     font-size: 35px;
