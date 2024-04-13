@@ -118,7 +118,7 @@ function lightMode(){
 
 // card-3
 
-function inc2(){
+function inc3(){
   const quantityText = document.getElementById("quantity-text-3");
 
   const showQuantity = document.getElementById("show-quantity-3");
@@ -138,6 +138,31 @@ let quantity = parseInt(quantityText.innerText);
 
         showQuantity.innerText = `${quantity}*691`;
         showTotal.innerText = `Total : ${quantity*691}`;
+      }
+
+      function dec3(){
+        const quantityText = document.getElementById("quantity-text-3");
+
+        const showQuantity = document.getElementById("show-quantity-3");
+
+        const showTotal = document.getElementById("show-total-3");
+
+        let quantity = parseInt(quantityText.innerText);
+
+  
+          if(quantity>1)
+          {
+              quantityText.innerText = --quantity
+          }
+          else
+          {
+              alert("You have met not offer for 1 product")
+      }
+  
+          showQuantity.innerText = `${quantity}*691`;
+          showTotal.innerText = `Total : ${quantity*691}`;
+  }
+
 
 
 
