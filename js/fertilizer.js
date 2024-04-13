@@ -39,7 +39,7 @@ function lightMode(){
           }
           else
           {
-              alert("You have met offer for 25%")
+              alert("you can't add more than 6 items")
           }
   
           showQuantity.innerText = `${quantity}*489`;
@@ -62,7 +62,7 @@ function lightMode(){
           }
           else
           {
-              alert("You have met not offer for 1 product")
+              alert("you can't add less than 1 items")
       }
   
           showQuantity.innerText = `${quantity}*489`;
@@ -86,7 +86,7 @@ function lightMode(){
           }
           else
           {
-              alert("You have met offer for 25%")
+              alert("you can't add more than 6 items")
           }
   
           showQuantity.innerText = `${quantity}*199`;
@@ -109,7 +109,7 @@ function lightMode(){
           }
           else
           {
-              alert("You have met not offer for 1 product")
+              alert("you can't add less than 1 items")
       }
   
           showQuantity.innerText = `${quantity}*199`;
@@ -133,7 +133,7 @@ let quantity = parseInt(quantityText.innerText);
         }
         else
         {
-            alert("You have met offer for 25%")
+            alert("you can't add more than 6 items")
         }
 
         showQuantity.innerText = `${quantity}*691`;
@@ -156,7 +156,7 @@ let quantity = parseInt(quantityText.innerText);
           }
           else
           {
-              alert("You have met not offer for 1 product")
+              alert("you can't add less than 1 items")
       }
   
           showQuantity.innerText = `${quantity}*691`;
@@ -180,7 +180,7 @@ let quantity = parseInt(quantityText.innerText);
           }
           else
           {
-              alert("You have met offer for 25%")
+              alert("you can't add more than 6 items")
           }
   
           showQuantity.innerText = `${quantity}*776`;
@@ -203,7 +203,7 @@ let quantity = parseInt(quantityText.innerText);
             }
             else
             {
-                alert("You have met not offer for 1 product")
+                alert("you can't add less than 1 items")
         }
     
             showQuantity.innerText = `${quantity}*776`;
@@ -228,7 +228,7 @@ let quantity = parseInt(quantityText.innerText);
             }
             else
             {
-                alert("You have met offer for 25%")
+                alert("you can't add more than 6 items")
             }
     
             showQuantity.innerText = `${quantity}*777`;
@@ -251,7 +251,7 @@ let quantity = parseInt(quantityText.innerText);
               }
               else
               {
-                  alert("You have met not offer for 1 product")
+                  alert("you can't add less than 1 items")
           }
       
               showQuantity.innerText = `${quantity}*777`;
@@ -276,7 +276,7 @@ let quantity = parseInt(quantityText.innerText);
               }
               else
               {
-                  alert("You have met offer for 25%")
+                  alert("you can't add more than 6 items")
               }
       
               showQuantity.innerText = `${quantity}*546`;
@@ -299,7 +299,7 @@ let quantity = parseInt(quantityText.innerText);
                 }
                 else
                 {
-                    alert("You have met not offer for 1 product")
+                    alert("you can't add less than 1 items")
             }
         
                 showQuantity.innerText = `${quantity}*546`;
@@ -312,3 +312,8 @@ let quantity = parseInt(quantityText.innerText);
 function msg(){
   alert("Thank you for your order! ");
 }
+
+
+
+
+

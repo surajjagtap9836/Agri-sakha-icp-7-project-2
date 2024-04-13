@@ -14,10 +14,10 @@ nav{
 }
 .theme-icon{
     height: 30px;
-    width: 40px;
+    width: 30px;
     cursor: pointer;
     padding: 10px;
-    border-radius: none;
+    border-radius: 5px;
     background-color: white; 
   }
   .active-mode{
@@ -66,3 +66,7 @@ nav{
     font-size: 25px;
     margin: auto 10px;
 }
+
+
+
+
